@@ -1,0 +1,191 @@
+/* Light Mode Styles for ThermWatch */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Top bar styles */
+.top-bar {
+  background-color: #e7e7e7;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.top-bar .app-logo {
+  height: 50px; /* Placeholder for logo height */
+}
+
+.top-bar .app-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Dashboard styles */
+.dashboard {
+  padding: 1rem;
+}
+
+/* Sensor cards */
+.sensor-card {
+  background-color: #f9f9f9;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sensor-card.green {
+  border-left: 5px solid #4caf50;
+}
+
+.sensor-card.yellow {
+  border-left: 5px solid #ffeb3b;
+}
+
+.sensor-card.red {
+  border-left: 5px solid #f44336;
+}
+
+/* Chart styles */
+.chart-container {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+/* Settings modal */
+#settings-modal {
+  background-color: #ffffff;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+/* Form styles */
+form {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+form input,
+form select {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Toggle switch */
+#theme-toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+#theme-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Status indicators */
+.status-indicator {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-indicator.green {
+  background-color: #4caf50;
+}
+
+.status-indicator.yellow {
+  background-color: #ffeb3b;
+}
+
+.status-indicator.red {
+  background-color: #f44336;
+}
+
+/* Misc */
+.hidden {
+  display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+  }
+
+  .top-bar .app-name {
+    margin-top: 0.5rem;
+  }
+}

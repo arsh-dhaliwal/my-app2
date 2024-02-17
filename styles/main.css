@@ -1,0 +1,125 @@
+/* Main application styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Top bar styles */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+}
+
+.top-bar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar .app-name {
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+
+.top-bar .selection-bar {
+  display: flex;
+}
+
+.top-bar .customer-name {
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+/* Dashboard styles */
+.dashboard {
+  padding: 20px;
+}
+
+.sensor-card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+  transition: background-color 0.3s;
+}
+
+.sensor-card.green {
+  border-left: 5px solid #4CAF50;
+}
+
+.sensor-card.yellow {
+  border-left: 5px solid #FFEB3B;
+}
+
+.sensor-card.red {
+  border-left: 5px solid #F44336;
+}
+
+/* Chart styles */
+.chart-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Settings popup styles */
+.settings-popup {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  z-index: 1000;
+}
+
+.settings-popup .tab-content {
+  display: none;
+}
+
+.settings-popup .tab-content.active {
+  display: block;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #333;
+  color: #f4f4f4;
+}
+
+.dark-mode .top-bar {
+  background-color: #005b99;
+}
+
+.dark-mode .sensor-card {
+  background-color: #424242;
+}
+
+/* Light mode styles */
+.light-mode {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.light-mode .top-bar {
+  background-color: #003366;
+}
+
+.light-mode .sensor-card {
+  background-color: #ffffff;
+}
+
+/* Importing other CSS files for themes */
+@import url('public/css/dark-mode.css');
+@import url('public/css/light-mode.css');
+
+/* Additional styles can be added below and modified as needed */

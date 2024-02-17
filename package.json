@@ -1,0 +1,51 @@
+{
+  "name": "ThermWatch",
+  "version": "1.0.0",
+  "description": "Temperature monitoring solution for high value assets located inside plants.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "author": "Your Company Name",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "dependencies": {
+    "better-sqlite3": "^7.4.3",
+    "chart.js": "^3.7.1",
+    "electron": "^20.0.0",
+    "modbus-serial": "^8.0.4",
+    "mqtt": "^4.3.6"
+  },
+  "devDependencies": {
+    "electron-builder": "^23.0.3"
+  },
+  "build": {
+    "appId": "com.yourcompany.thermwatch",
+    "productName": "ThermWatch",
+    "win": {
+      "icon": "assets/icons/icon.ico"
+    },
+    "mac": {
+      "icon": "assets/icons/icon.icns"
+    },
+    "linux": {
+      "icon": "assets/icons"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer.js",
+      "index.html",
+      "styles/",
+      "scripts/",
+      "db/",
+      "assets/",
+      "node_modules/",
+      "public/"
+    ],
+    "extraResources": [
+      "LICENSE.txt",
+      "EULA.txt"
+    ]
+  }
+}
