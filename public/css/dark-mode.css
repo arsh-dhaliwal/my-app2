@@ -1,0 +1,147 @@
+/* Dark Mode Styles for ThermWatch */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Top bar styles */
+.top-bar {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Logo styles */
+.logo {
+  filter: invert(100%);
+}
+
+/* Dashboard card styles */
+.card {
+  background-color: #1f1f1f;
+  border: 1px solid #333333;
+}
+
+.card-header {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.card-content {
+  background-color: #242424;
+  color: #d0d0d0;
+}
+
+/* Status indicators */
+.status-indicator.green {
+  color: #4caf50;
+}
+
+.status-indicator.yellow {
+  color: #ffeb3b;
+}
+
+.status-indicator.red {
+  color: #f44336;
+}
+
+/* Settings modal */
+#settings-modal {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+/* Form input styles */
+input,
+select,
+textarea {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border: 1px solid #424242;
+}
+
+/* Buttons */
+button {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #454545;
+}
+
+/* Toggle switch */
+#theme-toggle {
+  background-color: #333333;
+}
+
+/* Charts */
+.chart-container {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+/* Polar Trend Plot */
+#polar-trend-plot {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+/* Historic Trend Plot */
+#historic-trend-plot {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+/* Alert and Alarm styles */
+.alert,
+.alarm {
+  background-color: #212121;
+  color: #e0e0e0;
+}
+
+/* Menu template */
+.menu-template {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Demo mode styles */
+.demo-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Temperature unit toggle */
+.temperature-unit-toggle {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* General UI components */
+.ui-component {
+  background-color: #1f1f1f;
+  color: #d0d0d0;
+}
+
+/* Ensure that all text is legible in dark mode */
+.text-primary {
+  color: #ffffff;
+}
+
+.text-secondary {
+  color: #b0b0b0;
+}
+
+.text-warning {
+  color: #ffeb3b;
+}
+
+.text-danger {
+  color: #f44336;
+}
+
+.text-success {
+  color: #4caf50;
+}
+
+/* Additional styles can be added below as needed */
